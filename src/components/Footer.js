@@ -1,0 +1,78 @@
+const Footer = () => {
+  return (
+    <div>
+      <div>
+        <div>
+          <a
+            href="https://templatemo.com/tm-553-xtra-blog"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Prev
+          </a>
+          <a
+            href="https://templatemo.com/tm-553-xtra-blog"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Next
+          </a>
+        </div>
+        <div>
+          <span>Page</span>
+          <nav>
+            <ul>
+              <li>
+                <a
+                  href="https://templatemo.com/tm-553-xtra-blog"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  1
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://templatemo.com/tm-553-xtra-blog"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  2
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://templatemo.com/tm-553-xtra-blog"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  3
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://templatemo.com/tm-553-xtra-blog"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  4
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr />
+      <footer>
+        <div>
+          Design:
+          <a target="_parent" href="https://templatemo.com">
+            TemplateMo
+          </a>
+        </div>
+        <div>Copyright 2020 Xtra Blog Company Co. Ltd.</div>
+      </footer>
+    </div>
+  )
+}
+export default Footer
