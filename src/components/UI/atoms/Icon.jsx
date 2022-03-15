@@ -1,7 +1,7 @@
 const Icon = () => {
   return (
     <div>
-      <h1>Icon</h1>
+      <h1>Icons</h1>
     </div>
   )
 }

@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html{@apply overflow-x-hidden}
+    body{@apply text-zinc-500 text-[19px] leading-8 overflow-x-hidden m-0 p-0 font-sans}
+}
+
+@layer components { 
+.color{@apply bg-teal-400 text-white }
+}
