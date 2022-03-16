@@ -6,9 +6,10 @@
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 // import Button from '../UI/atoms/Button'
 import Form from "../UI/molecules/Form"
+import Logo from "../UI/molecules/Logo"
 const Main = () => {
   return (
-    <div>
+    <div style={{backgroundColor:"orange"}}>
       {/* <Button content={<Icon icon={faCoffee} />} type="default"/>
       <Icon cls="text-teal-400" icon={faCoffee}/>
       <Badge />
@@ -17,6 +18,7 @@ const Main = () => {
       <Input />
       <Articles/> */}
       <Form/>
+      <Logo/>
       <h1 style={{color:"red" , fontWeight:"bolder"}}>Main</h1>
     </div>
   )

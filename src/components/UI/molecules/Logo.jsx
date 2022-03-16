@@ -1,7 +1,9 @@
+import { faTimes } from "@fortawesome/free-solid-svg-icons"
+import Icon from "../atoms/Icon"
 const Logo = () => {
   return (
-    <div>
-      <h1>Logo</h1>
+    <div className="w-20	h-20 m-auto	items-center flex justify-center	bg-white	rounded-full">
+     <Icon cls="text-teal-400 text-5xl" icon={faTimes}/>
     </div>
   )
 }
