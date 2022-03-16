@@ -10,3 +10,11 @@
 @layer components { 
 .color{@apply bg-teal-400 text-white }
 }
+
+@layer components {
+    .li-hover {@apply text-teal-400 bg-white w-9/12 cursor-pointer }
+}
+
+/* @layer components {
+    .li-hover2 {@apply content-none max-w-xs block h-[75px] absolute border border-solid border-white ml-2.5 -mt-16 -z-[1000]}
+} */
