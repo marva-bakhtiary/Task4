@@ -1,7 +1,10 @@
-const Icon = () => {
+import React from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+const Icon = (props) => {
   return (
     <div>
-      <h1>Icons</h1>
+    <FontAwesomeIcon className={`text-4xl ${props.cls}`} icon={props.icon}/>
     </div>
   )
 }
