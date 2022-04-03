@@ -3,18 +3,34 @@
 @tailwind utilities;
 
 @layer base {
-    html{@apply overflow-x-hidden}
-    body{@apply text-zinc-500 text-[19px] leading-8 overflow-x-hidden m-0 p-0 font-sans}
-}
-
-@layer components { 
-.color{@apply bg-teal-400 text-white }
+  html {
+    @apply overflow-x-hidden;
+  }
+  body {
+    @apply text-zinc-500 text-[19px] leading-8 overflow-x-hidden m-0 p-0 font-sans;
+  }
 }
 
 @layer components {
-    .li-hover {@apply text-teal-400 bg-white w-9/12 cursor-pointer }
+  .color {
+    @apply bg-teal-400 text-white;
+  }
 }
 
-/* @layer components {
-    .li-hover2 {@apply content-none max-w-xs block h-[75px] absolute border border-solid border-white ml-2.5 -mt-16 -z-[1000]}
-} */
+@layer components {
+  .li-hover {
+    @apply text-teal-400 bg-white w-10/12 cursor-pointer;
+  }
+}
+
+@layer components {
+  .toggler {
+    @apply hidden md:block md:fixed md:top-1 md:left-0 md:bg-teal-400 md:text-white md:rounded-none md:py-2.5 md:px-4;
+  }
+}
+
+@layer components {
+  .sideBar {
+    @apply bg-teal-400 text-white fixed  z-[100]  w-96	overflow-y-visible	top-0	bottom-0	left-0  md:w-80	md:-left-80	md:duration-300	md:ease-in;
+  }
+}
