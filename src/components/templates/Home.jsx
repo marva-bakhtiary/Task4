@@ -17,6 +17,7 @@ const Home = () => {
     pagination1: "justify-between	flex mb-[75px] mt-[100px] max-w-6xl	",
     pagination2: " px-4 max-w-[50%] flex-[0_0_50%]",
   };
+
   return (
     <div>
       <aside className="sideBar">
@@ -30,6 +31,7 @@ const Home = () => {
             </div>
             <h1 className="text-center	font-normal	text-4xl mb-20">Xtra Blog</h1>
           </div>
+
           <SideBar />
           <p className="pl-[70px]	mb-20	">
             Xtra Blog is a multi-purpose HTML template from TemplateMo website.
@@ -47,38 +49,42 @@ const Home = () => {
           </div>
           <div className={styles.pagination1}>
             <div className={styles.pagination2}>
-              <Button
-                content="Prev"
-                type="default"
-                buttonType="w-40 cursor-not-allowed bg-neutral-200	text-zinc-500	hover:bg-neutral-300 underline	"
-              />
-              <Button
-                content="Next"
-                type="default"
-                buttonType="w-40 underline hover:bg-teal-500 "
-              />
+              <div className="inline-block">
+                <Button
+                  content="Prev"
+                  type="default"
+                  buttonType="w-32 cursor-not-allowed bg-neutral-200	text-zinc-500	hover:bg-neutral-300 underline"
+                />
+              </div>
+              <div className="inline-block">
+                <Button
+                  content="Next"
+                  type="default"
+                  buttonType="w-32 underline hover:bg-teal-500 ml-4	"
+                />
+              </div>
             </div>
-            <div>
+            <div className="flex justify-center items-center">
               <span>Page</span>
               <Button
                 content="1"
                 type="default"
-                buttonType="underline w-[60px]"
+                buttonType="underline w-[60px] ml-4	"
               />
               <Button
                 content="2"
                 type="default"
-                buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline w-[60px]	"
+                buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline w-[60px] ml-4"
               />
               <Button
                 content="3"
                 type="default"
-                buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline w-[60px]	"
+                buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline w-[60px]	ml-4"
               />
               <Button
                 content="4"
                 type="default"
-                buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline w-[60px]	"
+                buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline w-[60px]	ml-4	"
               />
             </div>
           </div>

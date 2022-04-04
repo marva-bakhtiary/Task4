@@ -1,7 +1,5 @@
-import Home from "../templates/Home"
+import Home from "../templates/Home";
 const Main = () => {
-  return (
- <Home/>
-  )
-}
-export default Main
+  return <Home />;
+};
+export default Main;

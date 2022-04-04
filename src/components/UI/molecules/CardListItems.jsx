@@ -13,9 +13,8 @@ const CardListItems = (props) => {
           src={props.character.img}
           alt="post"
         />
+        {props.new && <Badge />}
 
-        <Badge />
-        {/* if */}
 
         <h2 className="text-teal-600 text-3xl	transition-all duration-300	ease pt-7 hover:text-teal-400">
           {props.character.title}

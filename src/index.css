@@ -34,3 +34,9 @@
     @apply bg-teal-400 text-white fixed  z-[100]  w-96	overflow-y-visible	top-0	bottom-0	left-0  md:w-80	md:-left-80	md:duration-300	md:ease-in;
   }
 }
+
+@layer components {
+  .media {
+    @apply md:justify-start	md:mr-1	 md:w-2/4	 md:max-w-xs;
+  }
+}

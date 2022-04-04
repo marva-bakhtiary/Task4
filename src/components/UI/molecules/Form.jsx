@@ -9,7 +9,7 @@ const Form = (props) => {
       <Button
         type="default"
         content={<Icon icon={faSearch} cls="w-[60px]" />}
-        buttonType="hover:bg-teal-500"
+        buttonType="hover:bg-teal-500 "
       />
     </div>
   );

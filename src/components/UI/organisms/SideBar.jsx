@@ -55,7 +55,7 @@ const SideBar = () => {
           return <NavLinks link={link} key={link.id} />;
         })}
       </nav>
-      <nav>
+      <nav className="flex justify-center">
         {Socials.map((social) => {
           return <SocialLinks social={social} key={social.id} />;
         })}

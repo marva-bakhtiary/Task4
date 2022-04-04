@@ -65,8 +65,8 @@ const Characters = [
 const Articles = () => {
   return (
     <div className="max-w-6xl	justify-between	flex flex-wrap pt-7	-mx-3.5">
-      {Characters.map(character => {
-        return <CardListItems character={character} key={character.id} />;
+      {Characters.map((character,key) => {
+        return <CardListItems character={character} key={character.id} new={key < 2 ? true:false}/>;
       })}
     </div>
   )
