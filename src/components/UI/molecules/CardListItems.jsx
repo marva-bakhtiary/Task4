@@ -7,7 +7,7 @@ const CardListItems = (props) => {
         className="block relative cursor-pointer no-underline pt-[60px] "
         href="https://www.google.com/"
       >
-        <Divider />
+        <Divider commentDivide="border-t-8 border-t-teal-400 " />
         <img
           className="relative block min-h-full	max-h-full opacity-80 hover:opacity-100	"
           src={props.character.img}

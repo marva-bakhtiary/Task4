@@ -50,31 +50,35 @@ const Home = () => {
               <Button
                 content="Prev"
                 type="default"
-                buttonType="cursor-not-allowed bg-neutral-200	text-zinc-500	w-40	hover:bg-neutral-300 underline	"
+                buttonType="w-40 cursor-not-allowed bg-neutral-200	text-zinc-500	hover:bg-neutral-300 underline	"
               />
               <Button
                 content="Next"
                 type="default"
-                buttonType="w-40 underline"
+                buttonType="w-40 underline hover:bg-teal-500 "
               />
             </div>
             <div>
               <span>Page</span>
-              <Button content="1" type="default" buttonType="underline " />
+              <Button
+                content="1"
+                type="default"
+                buttonType="underline w-[60px]"
+              />
               <Button
                 content="2"
                 type="default"
-                buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline 	"
+                buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline w-[60px]	"
               />
               <Button
                 content="3"
                 type="default"
-                buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline 	"
+                buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline w-[60px]	"
               />
               <Button
                 content="4"
                 type="default"
-                buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline 	"
+                buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline w-[60px]	"
               />
             </div>
           </div>
