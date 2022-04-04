@@ -1,16 +1,21 @@
 const Button = (props) => {
-  const {type }=props;
- 
+  const { type } = props;
+
   return (
     <div>
-      <button  className={ type === "default" ? "border-none w-[60px] h-14 color text-2xl	transition-all duration-300	ease rounded hover:bg-teal-500 cursor-pointer" : 'hidden'} >{props.content}</button>
+      <button
+        className={
+          type === "default"
+            ? ` border-none w-[60px] h-14 color text-2xl	transition-all duration-300	ease rounded hover:bg-teal-500 cursor-pointer ${props.buttonType}`
+            : "hidden"
+        }
+      >
+        {props.content}
+      </button>
     </div>
-  )
-}
-export default Button
-
-
-
+  );
+};
+export default Button;
 
 // 1*  Toggler:
 // normal: 'hidden'

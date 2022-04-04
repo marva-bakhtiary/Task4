@@ -64,25 +64,3 @@ const SideBar = () => {
   );
 };
 export default SideBar;
-
-//   <div class="social">
-//     <a class="social-link">
-//       <i class="fa-brands fa-facebook social-icons"></i>
-//     </a>
-//     <a class="social-link">
-//       <i class="fa-brands fa-twitter social-icons"></i>
-//     </a>
-//     <a class="social-link">
-//       <i class="fa-brands fa-instagram social-icons"></i>
-//     </a>
-//     <a class="social-link">
-//       <i class="fa-brands fa-linkedin social-icons"></i>
-//     </a>
-//   </div>
-//   <p class="text">
-//     Xtra Blog is a multi-purpose HTML template from TemplateMo website.
-//     <br />
-//     Left side is a sticky menu bar. Right side content will scroll up and
-//     down.
-//   </p>
-// </div>
