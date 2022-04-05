@@ -1,44 +1,38 @@
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Icon from "../UI/atoms/Icon";
 import SideBar from "../UI/organisms/SideBar";
 import Form from "../UI/molecules/Form";
 import Articles from "../UI/organisms/Articles";
 import Button from "../UI/atoms/Button";
 import Divider from "../UI/atoms/Divider";
-
+import { useState } from "react";
+import Backdrop from "../UI/atoms/Backdrop";
 const Home = () => {
+  const [toggleState, setToggleState] = useState(false);
   const styles = {
     wrapper: "overflow-y-scroll	overflow-x-hidden	w-full	h-full ",
-    header: "mt-[50px] mb-12",
-    logo: "w-16	h-16 m-auto	rounded-full bg-white flex items-center	justify-center text-4xl	text-teal-400	",
     main: "w-full	px-4	mx-auto	 ",
     container:
       "ml-[400px] pt-20	px-24	pb-6 md:ml-20	md:py-16	md:w-[calc(100%-320px)]",
     pagination1: "justify-between	flex mb-[75px] mt-[100px] max-w-6xl	",
     pagination2: " px-4 max-w-[50%] flex-[0_0_50%]",
   };
-
+  const toggleHandler = () => {
+    setToggleState(!toggleState);
+  };
   return (
     <div>
-      <aside className="sideBar">
-        <div className={styles.wrapper}>
-          <button className="toggler" type="button">
-            <Icon icon={faBars} />
-          </button>
-          <div>
-            <div className={styles.header}>
-              <Icon icon={faXmark} cls={styles.logo} />
-            </div>
-            <h1 className="text-center	font-normal	text-4xl mb-20">Xtra Blog</h1>
-          </div>
+      <Backdrop show={toggleState} hide={toggleHandler} />
 
+      <div className={styles.wrapper}>
+        <button className="toggler" type="button" onClick={toggleHandler}>
+          <Icon icon={faBars} />
+        </button>
+      </div>
+      <aside className={toggleState ? "show" : "hide"}>
+        {toggleState ? <SideBar /> : null}
+        <div className="sideBar">
           <SideBar />
-          <p className="pl-[70px]	mb-20	">
-            Xtra Blog is a multi-purpose HTML template from TemplateMo website.
-            <br />
-            Left side is a sticky menu bar. Right side content will scroll up
-            and down.
-          </p>
         </div>
       </aside>
       <div className={styles.main}>

@@ -1,5 +1,6 @@
 import {
   faComments,
+  faXmark,
   faHome,
   faPen,
   faUsers,
@@ -8,6 +9,10 @@ import Icon from "../atoms/Icon";
 import NavLinks from "../molecules/NavLinks";
 import SocialLinks from "../molecules/SocialLinks";
 const SideBar = () => {
+  const styles = {
+    header: "mt-[50px] mb-12",
+    logo: "w-16	h-16 m-auto	rounded-full bg-white flex items-center	justify-center text-4xl	text-teal-400	",
+  };
   const Links = [
     {
       id: 1,
@@ -49,7 +54,13 @@ const SideBar = () => {
     },
   ];
   return (
-    <div>
+    <>
+      <>
+        <div className={styles.header}>
+          <Icon icon={faXmark} cls={styles.logo} />
+        </div>
+        <h1 className="text-center	font-normal	text-4xl mb-20">Xtra Blog</h1>
+      </>
       <nav>
         {Links.map((link) => {
           return <NavLinks link={link} key={link.id} />;
@@ -60,7 +71,13 @@ const SideBar = () => {
           return <SocialLinks social={social} key={social.id} />;
         })}
       </nav>
-    </div>
+      <p className="pl-[70px]	mb-20	">
+        Xtra Blog is a multi-purpose HTML template from TemplateMo website.
+        <br />
+        Left side is a sticky menu bar. Right side content will scroll up and
+        down.
+      </p>
+    </>
   );
 };
 export default SideBar;

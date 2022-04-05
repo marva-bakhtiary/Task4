@@ -4,7 +4,7 @@ import Icon from "../atoms/Icon";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 const Form = (props) => {
   return (
-    <div className="flex justify-end items-center">
+    <div className="flex justify-end items-center media">
       <Input />
       <Button
         type="default"

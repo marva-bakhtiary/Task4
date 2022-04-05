@@ -31,12 +31,24 @@
 
 @layer components {
   .sideBar {
-    @apply bg-teal-400 text-white fixed  z-[100]  w-96	overflow-y-visible	top-0	bottom-0	left-0  md:w-80	md:-left-80	md:duration-300	md:ease-in;
+    @apply overflow-y-scroll bg-teal-400 text-white fixed  z-[100]  w-96		top-0	bottom-0	left-0  md:w-80	md:-left-80	md:duration-300	md:ease-in;
   }
 }
 
 @layer components {
   .media {
-    @apply md:justify-start	md:mr-1	 md:w-2/4	 md:max-w-xs;
+    @apply md:justify-end	md:mr-1	 md:w-2/4	 md:max-w-xs;
+  }
+}
+
+@layer components {
+  .show {
+    @apply overflow-y-scroll bg-teal-400 text-white fixed  z-[100]  w-[360px]	ease-out duration-300  top-0	bottom-0	left-0;
+  }
+}
+
+@layer components {
+  .hide {
+    @apply overflow-y-scroll bg-teal-400 text-white fixed  z-[100]  	top-0	bottom-0	 w-80	-left-80	duration-200	ease-in;
   }
 }
