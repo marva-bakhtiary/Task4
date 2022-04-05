@@ -1,6 +1,6 @@
 import Divider from "../atoms/Divider";
 import Badge from "../atoms/Badge";
-const CardListItems = (props) => {
+const CardListItems = ({character,new}) => {
   return (
     <article className="max-w-[470px] mb-20">
       <a
@@ -10,21 +10,21 @@ const CardListItems = (props) => {
         <Divider commentDivide="border-t-8 border-t-teal-400 " />
         <img
           className="relative block min-h-full	max-h-full opacity-80 hover:opacity-100	"
-          src={props.character.img}
+          src={character.img}
           alt="post"
         />
-        {props.new && <Badge />}
+        {new && <Badge />}
 
 
         <h2 className="text-teal-600 text-3xl	transition-all duration-300	ease pt-7 hover:text-teal-400">
-          {props.character.title}
+          {character.title}
         </h2>
       </a>
-      <p>{props.character.text}</p>
+      <p>{character.text}</p>
       <div className="pt-11 justify-between">
-        <span className=" text-teal-400">{props.character.tag}</span>
+        <span className=" text-teal-400">{character.tag}</span>
         <Divider commentDivide="border-t-neutral-400 border-t-2	" />
-        <span className="justify-between block">{props.character.comment}</span>
+        <span className="justify-between block">{character.comment}</span>
       </div>
     </article>
   );

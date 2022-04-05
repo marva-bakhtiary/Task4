@@ -1,4 +1,4 @@
-const SocialLinks = (props) => {
+const SocialLinks = ({ social }) => {
   const styles = {
     social:
       "inline-block	bg-white text-teal-400	text-2xl	w-10	h-10	text-center	rounded pt-2	mr-1.5 mb-1.5 hover:text-cyan-600		 hover:cursor-pointer items-center	",
@@ -8,7 +8,7 @@ const SocialLinks = (props) => {
       <ul>
         <li className="mb-16 ">
           <a href="http://www.google.com" className={styles.social}>
-            {props.social.icon}
+            {social.icon}
           </a>
         </li>
       </ul>

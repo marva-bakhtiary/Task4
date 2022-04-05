@@ -1,7 +1,7 @@
-const Divider = (props) => {
+const Divider = ({ commentDivide }) => {
   return (
     <div>
-      <hr className={`pt-10	border-solid  ${props.commentDivide}`} />
+      <hr className={`pt-10	border-solid  ${commentDivide}`} />
     </div>
   );
 };
