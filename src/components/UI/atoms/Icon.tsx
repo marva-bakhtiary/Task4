@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 type IconProps = {
-  cls: string;
-  icon: ;
+  cls?: string;
+  iconShape: ;
 };
-const Icon = ({ cls, icon }: IconProps) => {
+
+const Icon = ({ cls, iconShape }: IconProps) => {
   return (
     <>
-      <FontAwesomeIcon className={`text-2xl ${cls}`} icon={icon} />
+      <FontAwesomeIcon className={`text-2xl ${cls}`} icon={iconShape} />
     </>
   );
 };

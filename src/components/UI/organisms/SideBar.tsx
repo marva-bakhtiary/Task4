@@ -17,47 +17,47 @@ const SideBar = () => {
     {
       id: 1,
       title: "Blog Home",
-      icon: <Icon icon={faHome} cls="mr-5 pr-5" />,
+      icon: <Icon iconShape={faHome} cls="mr-5 pr-5" />,
     },
     {
       id: 2,
       title: "Single Post",
-      icon: <Icon icon={faPen} cls="mr-5 pr-5" />,
+      icon: <Icon iconShape={faPen} cls="mr-5 pr-5" />,
     },
     {
       id: 3,
       title: "About Xtra",
-      icon: <Icon icon={faUsers} cls="mr-5 pr-5" />,
+      icon: <Icon iconShape={faUsers} cls="mr-5 pr-5" />,
     },
     {
       id: 4,
       title: "Contact Us",
-      icon: <Icon icon={faComments} cls="mr-5 pr-5" />,
+      icon: <Icon iconShape={faComments} cls="mr-5 pr-5" />,
     },
   ];
   const Socials = [
     {
       id: 1,
-      icon: <Icon icon={faComments} />,
+      icon: <Icon iconShape={faComments} />,
     },
     {
       id: 2,
-      icon: <Icon icon={faComments} />,
+      icon: <Icon iconShape={faComments} />,
     },
     {
       id: 3,
-      icon: <Icon icon={faComments} />,
+      icon: <Icon iconShape={faComments} />,
     },
     {
       id: 4,
-      icon: <Icon icon={faComments} />,
+      icon: <Icon iconShape={faComments} />,
     },
   ];
   return (
     <>
       <>
         <div className={styles.header}>
-          <Icon icon={faXmark} cls={styles.logo} />
+          <Icon iconShape={faXmark} cls={styles.logo} />
         </div>
         <h1 className="text-center	font-normal	text-4xl mb-20">Xtra Blog</h1>
       </>

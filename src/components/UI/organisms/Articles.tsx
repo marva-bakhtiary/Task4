@@ -63,7 +63,7 @@ const Articles = () => {
           <CardListItems
             character={character}
             key={character.id}
-            new={key < 2 ? true : false}
+            newBadge={key < 2 ? true : false}
           />
         );
       })}

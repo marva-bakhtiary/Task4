@@ -1,7 +1,7 @@
 import Divider from "../atoms/Divider";
 import Badge from "../atoms/Badge";
 
-type CardProps ={
+type CardProps = {
   character: {
     id: number;
     img: any;
@@ -9,10 +9,10 @@ type CardProps ={
     text: string;
     tag: string;
     comment: string;
-} ,
-  new:boolean
-}
-const CardListItems = ({character,new}:CardProps) => {
+  };
+  newBadge: boolean;
+};
+const CardListItems = ({ character, newBadge }: CardProps) => {
   return (
     <article className="max-w-[470px] mb-20">
       <a
@@ -25,8 +25,7 @@ const CardListItems = ({character,new}:CardProps) => {
           src={character.img}
           alt="post"
         />
-        {new && <Badge />}
-
+        {newBadge && <Badge />}
 
         <h2 className="text-teal-600 text-3xl	transition-all duration-300	ease pt-7 hover:text-teal-400">
           {character.title}
