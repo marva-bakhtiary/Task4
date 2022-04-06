@@ -1,4 +1,11 @@
-const NavLinks = ({ link }) => {
+type NavlinkProps = {
+  link: {
+    id: number;
+    title: string;
+    icon: JSX.Element;
+  };
+};
+const NavLinks = ({ link }: NavlinkProps) => {
   return (
     <nav className="-ml-7	mb-[100px] ">
       <ul className="relative pl-[70px]">

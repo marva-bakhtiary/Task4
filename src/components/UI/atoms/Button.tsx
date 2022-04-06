@@ -1,6 +1,10 @@
-const Button = ({ type,content ,buttonType}) => {
-  
-
+type ButtonProps = {
+  type: string;
+  content: string | Object;
+  buttonType: string;
+};
+//React.CSSProperties
+const Button = ({ type, content, buttonType }: ButtonProps) => {
   return (
     <div>
       <button

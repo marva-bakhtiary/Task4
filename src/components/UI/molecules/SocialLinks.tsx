@@ -1,4 +1,10 @@
-const SocialLinks = ({ social }) => {
+type SocialLinksProps = {
+  social: {
+    id: number;
+    icon: JSX.Element;
+  };
+};
+const SocialLinks = ({ social }: SocialLinksProps) => {
   const styles = {
     social:
       "inline-block	bg-white text-teal-400	text-2xl	w-10	h-10	text-center	rounded pt-2	mr-1.5 mb-1.5 hover:text-cyan-600		 hover:cursor-pointer items-center	",

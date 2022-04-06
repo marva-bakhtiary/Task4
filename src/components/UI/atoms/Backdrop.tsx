@@ -1,4 +1,8 @@
-const Backdrop = ({ show, hide }) =>
+type BackdropProps = {
+  show: Boolean;
+  hide: React.MouseEventHandler<HTMLDivElement>;
+};
+const Backdrop = ({ show, hide }: BackdropProps) =>
   show ? (
     <div
       className="w-full h-full fixed left-0 top-0 z-[100] bg-stone-400 bg-opacity-50 "

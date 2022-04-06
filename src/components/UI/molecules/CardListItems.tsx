@@ -1,6 +1,18 @@
 import Divider from "../atoms/Divider";
 import Badge from "../atoms/Badge";
-const CardListItems = ({character,new}) => {
+
+type CardProps ={
+  character: {
+    id: number;
+    img: any;
+    title: string;
+    text: string;
+    tag: string;
+    comment: string;
+} ,
+  new:boolean
+}
+const CardListItems = ({character,new}:CardProps) => {
   return (
     <article className="max-w-[470px] mb-20">
       <a
