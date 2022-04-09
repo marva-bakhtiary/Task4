@@ -1,10 +1,10 @@
-type NavlinkProps = {
+interface NavlinkProps {
   link: {
     id: number;
     title: string;
     icon: JSX.Element;
   };
-};
+}
 const NavLinks = ({ link }: NavlinkProps) => {
   return (
     <nav className="-ml-7	mb-[100px] ">

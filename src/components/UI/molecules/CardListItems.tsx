@@ -1,7 +1,7 @@
 import Divider from "../atoms/Divider";
 import Badge from "../atoms/Badge";
 
-type CardProps = {
+interface CardProps {
   character: {
     id: number;
     img: any;
@@ -11,7 +11,7 @@ type CardProps = {
     comment: string;
   };
   newBadge: boolean;
-};
+}
 const CardListItems = ({ character, newBadge }: CardProps) => {
   return (
     <article className="max-w-[470px] mb-20">

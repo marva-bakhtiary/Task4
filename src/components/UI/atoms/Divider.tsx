@@ -1,6 +1,6 @@
-type DividerProps = {
+interface DividerProps {
   commentDivide: string;
-};
+}
 const Divider = ({ commentDivide }: DividerProps) => {
   return (
     <div>

@@ -7,7 +7,7 @@ import Button from "../UI/atoms/Button";
 import Divider from "../UI/atoms/Divider";
 import { useState } from "react";
 import Backdrop from "../UI/atoms/Backdrop";
-const Home = () => {
+const Home: React.FC = () => {
   const [toggleState, setToggleState] = useState(false);
   const styles = {
     wrapper: "overflow-y-scroll	overflow-x-hidden	w-full	h-full ",
@@ -26,7 +26,7 @@ const Home = () => {
 
       <div className={styles.wrapper}>
         <button className="toggler" type="button" onClick={toggleHandler}>
-          <Icon icon={faBars} />
+          <Icon iconShape={faBars} />
         </button>
       </div>
       <aside className={toggleState ? "show" : "hide"}>

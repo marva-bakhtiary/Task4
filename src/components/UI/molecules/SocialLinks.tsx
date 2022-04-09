@@ -1,9 +1,9 @@
-type SocialLinksProps = {
+interface SocialLinksProps {
   social: {
     id: number;
     icon: JSX.Element;
   };
-};
+}
 const SocialLinks = ({ social }: SocialLinksProps) => {
   const styles = {
     social:

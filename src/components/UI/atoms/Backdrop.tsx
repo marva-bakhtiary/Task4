@@ -1,7 +1,7 @@
-type BackdropProps = {
+interface BackdropProps {
   show: Boolean;
   hide: React.MouseEventHandler<HTMLDivElement>;
-};
+}
 const Backdrop = ({ show, hide }: BackdropProps) =>
   show ? (
     <div

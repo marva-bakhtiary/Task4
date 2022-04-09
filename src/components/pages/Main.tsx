@@ -1,5 +1,5 @@
 import Home from "../templates/Home";
-const Main = () => {
+const Main: React.FC = () => {
   return <Home />;
 };
 export default Main;
