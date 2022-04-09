@@ -2,8 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface IconProps {
   extraClass?: string;
-  iconShape: ;
-};
+  iconShape: any;
+}
 
 const Icon = ({ extraClass, iconShape }: IconProps) => {
   return (
