@@ -64,6 +64,7 @@ const Articles = () => {
             character={character}
             key={character.id}
             newBadge={key < 2 ? true : false}
+            
           />
         );
       })}

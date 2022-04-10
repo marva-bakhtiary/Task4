@@ -1,7 +1,7 @@
 interface ButtonProps {
   type: string;
-  content: string | Object;
-  buttonType: string;
+  content: string | object;
+  buttonType?: string;
 }
 //React.CSSProperties
 const Button = ({ type, content, buttonType }: ButtonProps) => {
