@@ -2,16 +2,26 @@ import Input from "../atoms/Input";
 import Button from "../atoms/Button";
 import Icon from "../atoms/Icon";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-const Form = () => {
+
+interface FormProps {
+  change?: any;
+  Value?: any;
+}
+
+const Form = ({ change, Value }: FormProps) => {
   return (
-    <div className="flex justify-end items-center media">
+    <form
+      onChange={change}
+      defaultValue={Value}
+      className="flex justify-end items-center media"
+    >
       <Input />
       <Button
         type="default"
         content={<Icon iconShape={faSearch} extraClass="w-[60px]" />}
         buttonType="hover:bg-teal-500 "
       />
-    </div>
+    </form>
   );
 };
 export default Form;

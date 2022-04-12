@@ -5,6 +5,8 @@ import img3 from "../../../assets/img-03.jpg";
 import img4 from "../../../assets/img-04.jpg";
 import img5 from "../../../assets/img-05.jpg";
 import img6 from "../../../assets/img-06.jpg";
+import { useState } from "react";
+import Form from "../molecules/Form";
 const Characters = [
   {
     id: 1,
@@ -55,20 +57,35 @@ const Characters = [
     comment: "96 comments by Admin Nat",
   },
 ];
+
 const Articles = () => {
+  const [inputValue, setInputValue] = useState("");
+  const onChangeHandler = (e: any) => {
+    setInputValue(e.target.value.toLowerCase());
+  };
+
+  const filteredData = Characters.filter((el) => {
+    if (inputValue === "") {
+      return el;
+    } else {
+      return Object.values(el).join("").toLowerCase().includes(inputValue);
+    }
+  });
   return (
-    <div className="max-w-6xl	justify-between	flex flex-wrap pt-7	-mx-3.5">
-      {Characters.map((character, key) => {
-        return (
-          <CardListItems
-            character={character}
-            key={character.id}
-            newBadge={key < 2 ? true : false}
-            
-          />
-        );
-      })}
-    </div>
+    <>
+      <Form change={onChangeHandler} Value={inputValue} />
+      <div className="max-w-6xl	justify-between	flex flex-wrap pt-7	-mx-3.5">
+        {filteredData.map((character, key) => {
+          return (
+            <CardListItems
+              character={character}
+              key={character.id}
+              newBadge={key < 2 ? true : false}
+            />
+          );
+        })}
+      </div>
+    </>
   );
 };
 export default Articles;

@@ -1,7 +1,6 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Icon from "../UI/atoms/Icon";
 import SideBar from "../UI/organisms/SideBar";
-import Form from "../UI/molecules/Form";
 import Articles from "../UI/organisms/Articles";
 import Button from "../UI/atoms/Button";
 import Divider from "../UI/atoms/Divider";
@@ -37,7 +36,6 @@ const Home: React.FC = () => {
       </aside>
       <div className={styles.main}>
         <section className={styles.container}>
-          <Form />
           <div>
             <Articles />
           </div>
