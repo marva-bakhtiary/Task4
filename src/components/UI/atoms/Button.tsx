@@ -8,6 +8,9 @@ const Button = ({ type, content, buttonType }: ButtonProps) => {
   return (
     <div>
       <button
+        onClick={(e) => {
+          e.preventDefault();
+        }}
         className={
           type === "default"
             ? ` border-none  h-14 color text-2xl	transition-all duration-300	ease rounded ${buttonType}`

@@ -5,7 +5,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 interface FormProps {
   change?: any;
-  Value?: any;
+  Value?: string;
 }
 
 const Form = ({ change, Value }: FormProps) => {

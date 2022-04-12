@@ -60,7 +60,7 @@ const Characters = [
 
 const Articles = () => {
   const [inputValue, setInputValue] = useState("");
-  const onChangeHandler = (e: any) => {
+  const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value.toLowerCase());
   };
 
