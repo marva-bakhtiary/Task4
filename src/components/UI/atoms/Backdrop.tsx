@@ -5,6 +5,7 @@ interface BackdropProps {
 const Backdrop = ({ show, hide }: BackdropProps) =>
   show ? (
     <div
+      data-testid="backdropID"
       className="w-full h-full fixed left-0 top-0 z-[100] bg-stone-400 bg-opacity-50 "
       onClick={hide}
     ></div>
