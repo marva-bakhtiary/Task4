@@ -17,7 +17,6 @@ const Form = ({ change, Value }: FormProps) => {
     >
       <Input />
       <Button
-        type="default"
         content={<Icon iconShape={faSearch} extraClass="w-[60px]" />}
         buttonType="hover:bg-teal-500 "
       />

@@ -1,5 +1,5 @@
 interface DividerProps {
-  commentDivide: string;
+  commentDivide?: string;
 }
 const Divider = ({ commentDivide }: DividerProps) => {
   return (

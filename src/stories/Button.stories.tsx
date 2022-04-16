@@ -12,7 +12,6 @@ export const Default = Template.bind({});
 
 Default.args = {
   content: "Button",
-  type: "default",
   buttonType: "hover:bg-teal-500",
 };
 

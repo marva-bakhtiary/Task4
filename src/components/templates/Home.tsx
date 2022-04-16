@@ -44,38 +44,29 @@ const Home: React.FC = () => {
               <div className="inline-block">
                 <Button
                   content="Prev"
-                  type="default"
                   buttonType="w-32 cursor-not-allowed bg-neutral-200	text-zinc-500	hover:bg-neutral-300 underline"
                 />
               </div>
               <div className="inline-block">
                 <Button
                   content="Next"
-                  type="default"
                   buttonType="w-32 underline hover:bg-teal-500 ml-4	"
                 />
               </div>
             </div>
             <div className="flex justify-center items-center">
               <span>Page</span>
-              <Button
-                content="1"
-                type="default"
-                buttonType="underline w-[60px] ml-4	"
-              />
+              <Button content="1" buttonType="underline w-[60px] ml-4	" />
               <Button
                 content="2"
-                type="default"
                 buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline w-[60px] ml-4"
               />
               <Button
                 content="3"
-                type="default"
                 buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline w-[60px]	ml-4"
               />
               <Button
                 content="4"
-                type="default"
                 buttonType="bg-neutral-200	text-zinc-500 hover:bg-teal-400 hover:text-white underline w-[60px]	ml-4	"
               />
             </div>
