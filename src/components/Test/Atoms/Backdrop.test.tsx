@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Backdrop from "../UI/atoms/Backdrop";
+import Backdrop from "../../UI/atoms/Backdrop";
 
 describe("Backdrop testing", () => {
   let isShow = true;

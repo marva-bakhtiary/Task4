@@ -1,6 +1,11 @@
 import { render, screen } from "@testing-library/react";
-import Button from "../UI/atoms/Button";
+import Button from "../../UI/atoms/Button";
 describe("Button Testing", () => {
+  test("button rendering", () => {
+    render(<Button content="button" />);
+    const button = screen.getByRole("button");
+    expect(button).toBeInTheDocument();
+  });
   test("has correct text", () => {
     render(<Button content="button" />);
     const button = screen.getByRole("button");

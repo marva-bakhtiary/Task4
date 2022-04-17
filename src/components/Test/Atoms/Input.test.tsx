@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Input from "../UI/atoms/Input";
+import Input from "../../UI/atoms/Input";
 const SetUp = () => {
   const utils = render(<Input />);
   const input = screen.getByRole("textbox");

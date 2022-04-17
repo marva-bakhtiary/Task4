@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Badge from "../UI/atoms/Badge";
+import Badge from "../../UI/atoms/Badge";
 
 const SetUp = () => {
   const utils = render(<Badge />);

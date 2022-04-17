@@ -1,7 +1,12 @@
 import { render, screen } from "@testing-library/react";
-import Divider from "../UI/atoms/Divider";
+import Divider from "../../UI/atoms/Divider";
 
 describe("Divider Testing", () => {
+  test("divider rendering", () => {
+    render(<Divider />);
+    const divider = screen.getByRole("separator");
+    expect(divider).toBeInTheDocument();
+  });
   test("correct style", () => {
     render(<Divider />);
     const divider = screen.getByRole("separator");
